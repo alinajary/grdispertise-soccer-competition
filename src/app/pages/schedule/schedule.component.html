@@ -1,0 +1,6 @@
+<h2>Match Schedule</h2>
+<ul class="schedule-list">
+  <li *ngFor="let match of matches" class="schedule-item">
+    <strong>{{ match.date }}</strong>: {{ match.teams }}
+  </li>
+</ul>

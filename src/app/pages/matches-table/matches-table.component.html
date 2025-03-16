@@ -1,0 +1,10 @@
+<div class="matches-table">
+    <h2>Team Rankings</h2>
+    <div class="ranking-list">
+      <div *ngFor="let team of rankedTeams; let i = index" class="team-card">
+        <span class="rank">{{ i + 1 }}</span>
+        <span class="team-name">{{ team.name }}</span>
+        <span class="score">{{ team.score }} points</span>
+      </div>
+    </div>
+  </div>

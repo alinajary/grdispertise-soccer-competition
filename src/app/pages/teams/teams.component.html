@@ -1,0 +1,9 @@
+<h2>Teams</h2>
+<div class="teams-container">
+  <div *ngFor="let team of teams" class="team-card">
+    <h3>{{ team.name }}</h3>
+    <ul class="players-list">
+      <li *ngFor="let player of team.players">{{ player }}</li>
+    </ul>
+  </div>
+</div>

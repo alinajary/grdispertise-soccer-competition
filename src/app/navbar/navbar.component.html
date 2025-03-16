@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="sidenav.toggle()" aria-label="Toggle sidenav">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="app-name">Soccer Competition</span>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="over" class="menu-nav">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/" routerLinkActive="active" (click)="sidenav.close()">🏠 Home Page</a>
+      <a mat-list-item routerLink="/teams" routerLinkActive="active" (click)="sidenav.close()">⚽ Teams</a>
+      <a mat-list-item routerLink="/schedule" routerLinkActive="active" (click)="sidenav.close()">📅 Schedule</a>
+      <a mat-list-item routerLink="/match-results" routerLinkActive="active" (click)="sidenav.close()">📊 Results</a>
+      <a mat-list-item routerLink="/matches-table" routerLinkActive="active" (click)="sidenav.close()">📋 Matches Table</a> <!-- New link -->
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!-- Main content goes here -->
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

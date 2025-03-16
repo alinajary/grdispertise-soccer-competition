@@ -1,0 +1,45 @@
+/* Full height container */
+.sidenav-container {
+  height: 100vh;
+}
+
+/* Custom styling for the sidenav */
+.menu-nav {
+  width: 250px;
+  background-color: #333; /* Dark background for better contrast */
+}
+
+/* Style the toolbar */
+mat-toolbar {
+  display: flex;
+  align-items: center;
+  background-color: #007bff; /* Primary color for the toolbar */
+  color: #ffffff; /* White text for better contrast */
+}
+
+/* Style the navigation list items */
+mat-nav-list a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff; /* White text for better contrast */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+mat-nav-list a:hover {
+  background-color: #555; /* Slightly lighter background on hover */
+  border-radius: 5px;
+}
+
+/* Active link styling */
+mat-nav-list a.active {
+  background-color: #007bff; /* Highlight active link */
+  color: #ffffff; /* Ensure active link text is white for contrast */
+  border-radius: 5px;
+}
+
+/* Icons spacing */
+mat-icon {
+  margin-right: 10px;
+}

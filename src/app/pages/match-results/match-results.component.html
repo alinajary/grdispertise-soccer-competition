@@ -1,0 +1,30 @@
+<h2>Match Results</h2>
+<ul class="results-list schedule-list">
+  <li *ngFor="let result of results" class="results-item schedule-item">
+    <strong>{{ result.date }}</strong>: {{ result.match }} - <span class="score">{{ result.score }}</span>
+  </li>
+</ul>
+
+<style>
+.results-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.results-item {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.results-item strong {
+  color: #444;
+}
+
+.results-item .score {
+  font-weight: bold;
+  color: #007bff;
+}
+</style>
