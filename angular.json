@@ -26,8 +26,16 @@
             ],
             "styles": [
               "@angular/material/prebuilt-themes/purple-green.css",
-              "src/styles.css"
+              "src/styles.css",
+              {
+                "input": "src/styles.css",
+                "inject": true,
+                "bundleName": "styles"
+              }
             ],
+            "optimization": {
+              "fonts": false
+            },  
             "scripts": [],
             "baseHref": "/grdispertise-soccer-competition/",
             "deployUrl": "/grdispertise-soccer-competition/"
